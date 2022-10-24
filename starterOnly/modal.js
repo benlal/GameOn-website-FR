@@ -160,10 +160,15 @@ function validate () {
     conditionsIcon.style.border = 'solid red 2px';
   }
 
+  //form validation
   if (firstValidation == true && lastValidation == true && emailValidation == true && quantityValidation == true && locationValidation == true && checkboxValidation == true) {
     closeBtn.style.display = 'none';
     form.style.display = 'none';
     confirmationMessage.style.display = 'block';
     confirmationBtn.addEventListener("click", closeModal);
-  }  
+    //prevent validate true to display confirmation message
+    event.preventDefault();
+  } else {
+    return false;
+  }
 }
