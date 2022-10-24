@@ -73,7 +73,7 @@
                   minlength="2"
                 /><br>
               </div>
-              <div id="first_error"></div>
+              <div id="first_error" class="error"></div>
               <div
                 class="formData">
                 <label for="last">Nom</label><br>
@@ -84,7 +84,7 @@
                   name="last"
                 /><br>
               </div>
-              <div id="last_error"></div>
+              <div id="last_error" class="error"></div>
               <div
                 class="formData">
                 <label for="email">E-mail</label><br>
@@ -95,7 +95,7 @@
                   name="email"
                 /><br>
               </div>
-              <div id="email_error"></div>
+              <div id="email_error" class="error"></div>
               <div
                 class="formData">
                 <label for="birthdate">Date de naissance</label><br>
@@ -106,18 +106,18 @@
                   name="birthdate"
                 /><br>
               </div>
-              <div id="birthdate_error"></div>
+              <div id="birthdate_error" class="error"></div>
               <div
                 class="formData">
                 <label for="quantity">À combien de tournois GameOn avez-vous déjà participé ?</label><br>
                 <input type="number" class="text-control" id="quantity" name="quantity" min="0" max="99">
               </div>
-              <div id="quantity_error"></div>
+              <div id="quantity_error" class="error"></div>
               <p class="text-label">A quel tournoi souhaitez-vous participer cette année ?</p>
               <div
                 class="formData">
                 <input
-                  class="checkbox-input"
+                  class="checkbox-input location-input"
                   type="radio"
                   id="location1"
                   name="location"
@@ -183,7 +183,7 @@
                   Portland</label
                 >
               </div>
-              <div id="location_error"></div>
+              <div id="location_error" class="error"></div>
               <div
                 class="formData">
                 <input
@@ -204,7 +204,7 @@
                 </label>
                 <br>
               </div>
-              <div id="checkbox_error"></div>
+              <div id="checkbox_error" class="error"></div>
               <input
               class="btn-submit"
               type="submit"
@@ -212,9 +212,21 @@
               value="C'est parti"
               />
             </form>
+            <div class="confirmation-message">
+              <p class="text-label">Votre participation a bien été prise en compte.</p>
+              <input
+              id = "close-btn"
+              class="btn-submit button"
+              type="button"
+              value="Fermer"
+              />
+            </div>
+            
           </div>
+          
         </div>
       </div>
+      
     </main>
     <footer>
       <p class="copyrights">
