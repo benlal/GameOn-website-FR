@@ -62,7 +62,7 @@ function validate () {
 
   // firstname validation
   let firstValidation;
-  if (firstName.value.length < 2 || firstName.value == null) {
+  if (firstName.value == null || firstName.value.trim().length < 2) {
     firstValidation = false;
     firstName.classList.add("empty");
     first_error.style.display = 'flex';
@@ -75,7 +75,7 @@ function validate () {
 
   // lastname validation
   let lastValidation;
-  if (lastName.value.length < 2 || lastName.value == null) {
+  if (lastName.value == null || lastName.value.trim().length < 2) {
     lastValidation = false;
     lastName.classList.add("empty");
     last_error.style.display = 'flex';
