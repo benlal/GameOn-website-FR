@@ -162,7 +162,6 @@ function validate () {
 
   //form validation
   if (firstValidation == true && lastValidation == true && emailValidation == true && quantityValidation == true && locationValidation == true && checkboxValidation == true) {
-    closeBtn.style.display = 'none';
     form.style.display = 'none';
     confirmationMessage.style.display = 'block';
     confirmationBtn.addEventListener("click", closeModal);

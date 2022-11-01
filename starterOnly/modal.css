@@ -37,6 +37,12 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+
+
+i {
+  color: red;
+}
+
 .header-logo {
     float: left;
 }
@@ -55,7 +61,7 @@ img {
   font-family: Roboto, sans-serif;
 }
 
-.topnav a:hover {
+.topnav a:hover, i:hover {
   background-color: #ff0000;
   color: #ffffff;
   border-radius: 15px;
@@ -380,7 +386,7 @@ input[data-error]::after {
   font-size: 16px;
 }
 .hero-section {
-  /* min-height: 93vh; */
+  min-height: 93vh;
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -454,6 +460,8 @@ footer {
   padding-right: 2vw;
   margin: 0 20px;
 }
+
+
 
 /* 768 */
 @media screen and (max-width: 1180px) {
